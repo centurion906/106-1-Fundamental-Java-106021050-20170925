@@ -88,6 +88,15 @@ public class MainFrame1 extends JFrame {
                             case "-":
                                 op = 1;
                                 v1 = Double.parseDouble(jib.getText());
+                                break;
+                            case "*":
+                                op = 2;
+                                v1 = Double.parseDouble(jib.getText());
+                                break;
+                            case "/":
+                                op = 3;
+                                v1 = Double.parseDouble(jib.getText());
+                                break;
                             case "=":
                                 v2 = Double.parseDouble(jib.getText());
                                 double v3 = 0;
@@ -95,6 +104,17 @@ public class MainFrame1 extends JFrame {
                                     case 0:
                                         v3 = v1 + v2;
                                         break;
+                                    case -1:
+                                       v3 = Math.sqrt(v1);
+                                       break;
+                                    case 1:
+                                        v3 = v1-v2;
+                                        break;
+                                    case 2:
+                                        v3 = v1*v2;
+                                        break;
+                                    case 3:
+                                        v3 = v1/v2;
                                 }
                                 break;
                         }
