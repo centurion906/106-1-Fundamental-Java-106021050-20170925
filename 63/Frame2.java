@@ -4,7 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Frame2 extends JFrame{
-    static int mapHeight = 9, mapWidth = 9;
+    static int mapHeight , mapWidth;
     static int frameWidth = 400, frameHeight = 400;
     private JButton [][] jbtn;
     private int timecount = 0;
@@ -12,7 +12,10 @@ public class Frame2 extends JFrame{
     private JLabel jlb = new JLabel("已經過時間：0");
     private JPanel centerButtonPanel;
     private JPanel topPanel;
-    public Frame2(){
+
+    public Frame2(int v1,int v2){
+        mapHeight = v1;
+        mapWidth = v2;
         ex2();
     }public void ex2(){
         this.setBounds(100,100,frameWidth,frameHeight);

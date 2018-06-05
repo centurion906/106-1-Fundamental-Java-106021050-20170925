@@ -50,8 +50,8 @@ public class MainFrame1 extends JFrame{
         jbtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                if (jtf.getText().equals("tim")&&(new String(jtf1.getPassword()).equals("123456"))){
-                    Frame2 frm = new Frame2();
+                if (jtf.getText().equals("1")&&(new String(jtf1.getPassword()).equals("1"))){
+                    Frame2 frm = new Frame2(Integer.parseInt(jtf2.getText()), Integer.parseInt(jtf3.getText()));
                     frm.setVisible(true);
                     MainFrame1.this.setVisible(false);
                 }else {
